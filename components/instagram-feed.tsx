@@ -58,7 +58,7 @@ export function InstagramFeed({
       }
     } catch (err) {
       console.error('Instagram feed error:', err)
-      setError('Instagram bağlantısında sorun oluştu')
+      setError('Instagram bağlantısında sorun oluştu - test')
     } finally {
       setLoading(false)
     }
