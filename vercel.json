@@ -1,7 +1,4 @@
 {
-  "buildCommand": "npm run build",
-  "devCommand": "npm run dev",
-  "installCommand": "npm install",
   "framework": "nextjs",
   "regions": ["fra1"],
   "functions": {
@@ -9,12 +6,6 @@
       "maxDuration": 30
     }
   },
-  "crons": [
-    {
-      "path": "/api/instagram",
-      "schedule": "0 */6 * * *"
-    }
-  ],
   "headers": [
     {
       "source": "/(.*)",
