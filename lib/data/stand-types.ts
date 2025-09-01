@@ -23,20 +23,25 @@ export interface StandType {
 }
 
 export async function getStandTypes(): Promise<StandType[]> {
-  const supabase = await createClient()
-  
-  const { data: standTypes, error } = await supabase
-    .from('stand_types')
-    .select('*')
-    .eq('is_active', true)
-    .order('order_index', { ascending: true })
+  try {
+    const supabase = await createClient()
+    
+    const { data: standTypes, error } = await supabase
+      .from('stand_types')
+      .select('*')
+      .eq('is_active', true)
+      .order('order_index', { ascending: true })
 
-  if (error) {
-    console.error('Error fetching stand types:', error)
+    if (error) {
+      console.error('Error fetching stand types:', error)
+      return []
+    }
+
+    return standTypes || []
+  } catch (error) {
+    console.error('Error in getStandTypes:', error)
     return []
   }
-
-  return standTypes || []
 }
 
 export async function getStandTypeBySlug(slug: string): Promise<StandType | null> {

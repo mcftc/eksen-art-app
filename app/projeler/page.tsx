@@ -5,6 +5,9 @@ import { getProjects, getFeaturedProjects } from "@/lib/data/projects"
 import { siteConfig } from "@/lib/site-config"
 import { ProjectsGallery } from "@/components/projects-gallery"
 
+export const dynamic = 'force-dynamic'
+export const revalidate = 0
+
 export const metadata: Metadata = {
   title: `Projelerimiz | ${siteConfig.name}`,
   description: "Gerçekleştirdiğimiz fuar standı projeleri. Ahşap, Maxima, Modüler ve Paket stand çözümlerimizden örnekler ve başarı hikayelerimiz.",

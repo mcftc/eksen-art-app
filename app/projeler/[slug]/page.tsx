@@ -4,20 +4,11 @@ import { getProjectBySlug, getProjects } from "@/lib/data/projects"
 import { ProjectPage } from "@/components/project-page"
 import { siteConfig } from "@/lib/site-config"
 
+export const dynamic = 'force-dynamic'
+export const revalidate = 0
+
 interface Props {
   params: { slug: string }
-}
-
-export async function generateStaticParams() {
-  try {
-    const projects = await getProjects()
-    return projects.map((project) => ({
-      slug: project.slug,
-    }))
-  } catch (error) {
-    console.error('Error generating static params:', error)
-    return []
-  }
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {

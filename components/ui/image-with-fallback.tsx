@@ -67,16 +67,13 @@ export function ImageWithFallback({
         width={width}
         height={height}
         fill={fill}
-        className={className}
+        className={`${className} ${isLoading ? 'opacity-0' : 'opacity-100'} transition-opacity duration-300`}
         sizes={sizes}
         priority={priority}
         onLoad={() => setIsLoading(false)}
         onError={() => {
           setHasError(true)
           setIsLoading(false)
-        }}
-        style={{ 
-          display: isLoading ? 'none' : 'block'
         }}
       />
     </>
