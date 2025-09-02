@@ -1,36 +1,27 @@
-import { HeroSection } from "@/components/hero-section"
+import { HeroWithProjects } from "@/components/hero-with-projects"
 import { StandTypesSection } from "@/components/stand-types-section"
 import { ServicesSection } from "@/components/services-section"
-import { InstagramFeed } from "@/components/instagram-feed"
 import { CTASection } from "@/components/cta-section"
 import { getStandTypes } from "@/lib/data/stand-types"
 import { getServices } from "@/lib/data/services"
+import { getFeaturedProjects } from "@/lib/data/projects"
+
+export const dynamic = 'force-dynamic'
+export const revalidate = 0
 
 export default async function Home() {
   // Fetch data in parallel
-  const [standTypes, services] = await Promise.all([
+  const [standTypes, services, featuredProjects] = await Promise.all([
     getStandTypes(),
     getServices(),
+    getFeaturedProjects(8), // Get 8 featured projects for showcase
   ])
 
   return (
     <>
-      <HeroSection />
+      <HeroWithProjects projects={featuredProjects} />
       <StandTypesSection standTypes={standTypes} />
       <ServicesSection services={services} />
-      
-      {/* Instagram Section */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-muted/30">
-        <div className="max-w-7xl mx-auto">
-          <InstagramFeed 
-            limit={6}
-            columns={3}
-            showCaption={false}
-            showHeader={true}
-          />
-        </div>
-      </section>
-      
       <CTASection />
     </>
   )

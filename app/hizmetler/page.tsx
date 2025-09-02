@@ -4,6 +4,9 @@ import { CTASection } from "@/components/cta-section"
 import { siteConfig } from "@/lib/site-config"
 import { getServices } from "@/lib/data/services"
 
+export const dynamic = 'force-dynamic'
+export const revalidate = 0
+
 export const metadata: Metadata = {
   title: `Hizmetlerimiz | ${siteConfig.name}`,
   description: "Fuar standı tasarımı, imalatı, kurulumu, depolaması ve baskı hizmetleri. Tasarımdan kuruluma kadar anahtar teslim fuar stand çözümleri.",

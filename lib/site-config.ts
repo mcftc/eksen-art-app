@@ -1,15 +1,18 @@
 ﻿export const siteConfig = {
     name: 'Eksenart Mimarlık',
-    title: 'Eksenart Mimarlık | Fuar Standı Tasarımı, İmalatı ve Kurulumu | İstanbul & Avrupa',
+    title: 'Eksenart Mimarlık | Mekansal Tasarım, Mimari Dekorasyon & Fuar Standı | Türkiye, Almanya & Global',
     description:
-        'Eksenart Mimarlık – Ahşap, Maxima, Modüler ve Paket fuar standı tasarımı, imalatı, kurulumu ve depolama hizmetlerinde uzman. İstanbul merkezli, Türkiye ve Avrupa genelinde profesyonel fuar çözümleri.',
+        'Eksenart Mimarlık – Mekansal tasarım, mimari dekorasyon, fuar standı proje uygulaması ve proje yönetimi konularında uzman. Türkiye ve Almanya atölyelerimizle global hizmetler. 10+ yıl deneyim.',
     keywords: [
         // Core service keywords
+        'mekansal tasarım',
+        'mimari dekorasyon',
+        'proje yönetimi',
         'fuar standı tasarımı',
         'fuar standı imalatı',
         'fuar standı kurulumu',
-        'fuar standı depolama',
-        'tasarım baskısı',
+        'tanıtım faaliyetleri',
+        'proje organizasyonu',
         // Stand types
         'ahşap fuar standı',
         'maxima fuar standı',
@@ -26,7 +29,11 @@
         // Geo modifiers
         'İstanbul fuar standı',
         'Türkiye fuar standı',
+        'Almanya fuar standı',
         'Avrupa fuar standı',
+        'Rusya fuar standı',
+        'Orta Doğu fuar standı',
+        'ABD fuar standı',
         // Brand
         'Eksenart Mimarlık'
     ],
@@ -69,7 +76,6 @@
                 ]
             },
             { name: 'Projeler', href: '/projeler' },
-            { name: 'Instagram', href: '/instagram' },
             { name: 'Hakkımızda', href: '/hakkimizda' },
             { name: 'İletişim', href: '/iletisim' }
         ]

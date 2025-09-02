@@ -4,7 +4,7 @@ import { Building2, Users, Award, Target, Heart, Zap, Shield, Globe } from "luci
 
 export const metadata: Metadata = {
   title: `Hakkımızda | ${siteConfig.name}`,
-  description: "Eksenart Mimarlık olarak 15+ yıllık deneyimle fuar standı tasarımı ve üretimi konusunda sektörün önde gelen firmalarından biriyiz. Vizyonumuz, misyonumuz ve değerlerimiz.",
+  description: "Eksenart Mimarlık - Mekansal tasarım, mimari dekorasyon, fuar standı ve proje yönetimi uzmanı. Türkiye ve Almanya atölyelerimizle 10+ yıl global hizmet.",
   keywords: [
     "hakkımızda",
     "eksenart mimarlık",
@@ -17,10 +17,10 @@ export const metadata: Metadata = {
 
 export default function AboutPage() {
   const stats = [
-    { number: "15+", label: "Yıllık Deneyim" },
-    { number: "500+", label: "Tamamlanan Proje" },
-    { number: "50+", label: "Farklı Sektör" },
-    { number: "25+", label: "Ülke Deneyimi" }
+    { number: "10+", label: "Yıllık Deneyim" },
+    { number: "100+", label: "Fuar & Etkinlik" },
+    { number: "2", label: "Üretim Atölyesi" },
+    { number: "Global", label: "Hizmet Ağı" }
   ]
 
   const values = [
@@ -76,9 +76,9 @@ export default function AboutPage() {
             Hakkımızda
           </h1>
           <p className="text-xl text-muted-foreground leading-relaxed">
-            15+ yıllık deneyimimizle fuar standı tasarımı ve üretimi konusunda 
-            sektörün önde gelen firmalarından biriyiz. Her projede mükemmellik 
-            arayışımız ve müşteri memnuniyeti odaklı yaklaşımımızla tanınırız.
+            Kendimizi mekansal tasarım, tanıtım faaliyetleri, proje organizasyonu, 
+            fuar standı proje uygulaması, mimari dekorasyon ve proje yönetimi konularında 
+            uzman olarak konumluyoruz. Türkiye ve Almanya'daki atölyelerimizle global hizmet veriyoruz.
           </p>
         </div>
 
@@ -104,10 +104,10 @@ export default function AboutPage() {
               <h2 className="text-2xl font-bold">Misyonumuz</h2>
             </div>
             <p className="text-muted-foreground leading-relaxed">
-              Müşterilerimizin marka değerlerini en iyi şekilde yansıtan, yaratıcı ve 
-              fonksiyonel fuar standları tasarlayarak, onların iş hedeflerine ulaşmalarına 
-              destek olmak. Kaliteli hizmet anlayışı ve güvenilir çözümlerle sektörde 
-              öncü bir rol üstlenmek.
+              Mekansal tasarım ve mimari dekorasyon alanında yaratıcı çözümler üreterek, 
+              müşterilerimizin marka değerlerini en iyi şekilde yansıtmak. Fuar standı, 
+              etkinlik organizasyonu ve proje yönetimi konularında güvenilir partner olmak.
+              Türkiye ve Almanya merkezli operasyonlarımızla global standartlarda hizmet sunmak.
             </p>
           </div>
           
@@ -117,9 +117,10 @@ export default function AboutPage() {
               <h2 className="text-2xl font-bold">Vizyonumuz</h2>
             </div>
             <p className="text-muted-foreground leading-relaxed">
-              Fuar standı tasarımı ve üretimi alanında Türkiye&apos;nin lider firması olarak, 
-              uluslararası arenada da tanınan bir marka haline gelmek. Sürdürülebilir 
-              tasarım anlayışı ve teknolojik yeniliklerle geleceğin fuarlarını şekillendirmek.
+              Mekansal tasarım ve mimari dekorasyon alanında global bir marka haline gelmek.
+              Almanya üretim merkezimiz ve Rusya, Orta Doğu, ABD'deki güvenilir ortaklarımızla
+              dünya genelinde prestijli projelere imza atmak. Sürdürülebilir ve yenilikçi
+              tasarımlarla sektöre yön vermek.
             </p>
           </div>
         </div>
@@ -160,28 +161,68 @@ export default function AboutPage() {
           </div>
         </div>
 
+        {/* Global Service Network */}
+        <div className="bg-gradient-to-br from-primary/10 to-primary/5 rounded-2xl p-8 md:p-12 mb-16">
+          <h2 className="text-3xl font-bold text-center mb-8">Global Hizmet Ağımız</h2>
+          <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+            <div className="space-y-4">
+              <h3 className="font-semibold text-xl text-primary">🇹🇷 Türkiye Operasyonları</h3>
+              <p className="text-muted-foreground">
+                10 yılı aşkın süredir Türkiye'nin her bölgesinde yüzlerce fuar ve etkinlikte 
+                sayısız markaya hizmet verdik. İstanbul merkezli üretim tesisimizle yerli 
+                ve yabancı müşterilerimize hızlı ve kaliteli çözümler sunuyoruz.
+              </p>
+            </div>
+            <div className="space-y-4">
+              <h3 className="font-semibold text-xl text-primary">🇩🇪 Almanya Atölyesi</h3>
+              <p className="text-muted-foreground">
+                Almanya'daki üretim atölyemiz ile Avrupa pazarındaki operasyonlarımızı 
+                yürütüyoruz. Spoga+Gafa, IFF gibi prestijli fuarlarda başarılı projeler 
+                gerçekleştiriyoruz.
+              </p>
+            </div>
+            <div className="space-y-4">
+              <h3 className="font-semibold text-xl text-primary">🌍 Global İş Ortakları</h3>
+              <p className="text-muted-foreground">
+                Rusya, Orta Doğu ve ABD'de uzun vadeli, güvenilir ortaklarımızla 
+                iş birliği yapıyoruz. Bu sayede dünya genelinde müşterilerimize 
+                kesintisiz hizmet sunabiliyoruz.
+              </p>
+            </div>
+            <div className="space-y-4">
+              <h3 className="font-semibold text-xl text-primary">📍 Referans Fuarlar</h3>
+              <p className="text-muted-foreground">
+                2024-2025 döneminde Spoga+Gafa (Almanya), InterDye (İstanbul), 
+                CFE (İstanbul), İFF (İstanbul) gibi önemli fuarlarda prestijli 
+                markalarla çalıştık.
+              </p>
+            </div>
+          </div>
+        </div>
+
         {/* Company History */}
         <div className="bg-muted/30 rounded-2xl p-8 md:p-12 mb-16">
           <h2 className="text-3xl font-bold text-center mb-8">Hikayemiz</h2>
           <div className="max-w-3xl mx-auto space-y-6 text-muted-foreground">
             <p>
-              <strong>2009 yılında</strong> kurulan Eksenart Mimarlık, fuar standı tasarımı alanında 
-              kendini kanıtlamış bir ekip tarafından hayata geçirildi. İlk projelerimizden itibaren 
-              kalite ve müşteri memnuniyetini ön planda tutarak sektörde hızla büyüdük.
+              <strong>10+ yıllık deneyim</strong> ile mekansal tasarım ve mimari dekorasyon 
+              alanında kendini kanıtlamış bir ekip olarak, Türkiye'nin her bölgesinde ve 
+              yurtdışında yüzlerce fuar ve etkinlikte sayısız markaya hizmet verdik.
             </p>
             <p>
-              <strong>2015&apos;te</strong> uluslararası fuarlara açılarak Avrupa pazarında da hizmet 
-              vermeye başladık. Almanya, İtalya, Fransa gibi ülkelerdeki prestijli fuarlarda 
-              başarılı projeler gerçekleştirdik.
+              <strong>Almanya atölyemiz</strong> ile Avrupa pazarında güçlü bir konuma 
+              geldik. Spoga+Gafa, IFF gibi prestijli fuarlarda Novussi, Furax, Cardinya 
+              gibi önemli markalarla çalışma fırsatı yakaladık.
             </p>
             <p>
-              <strong>2020 sonrası</strong> dijital dönüşüm süreciyle birlikte hizmet kalitemizi 
-              artırdık. 3D modelleme, sanal tur teknolojileri ve sürdürülebilir tasarım 
-              yaklaşımlarını iş süreçlerimize entegre ettik.
+              <strong>Global vizyonumuz</strong> doğrultusunda Rusya, Orta Doğu ve ABD'de 
+              güvenilir iş ortaklarıyla network'ümüzü genişlettik. Bugün dünya genelinde 
+              güvenli ve kaliteli hizmet sunabiliyoruz.
             </p>
             <p>
-              <strong>Bugün</strong> 500&apos;den fazla başarılı projeye imza atarak, 50&apos;den fazla 
-              farklı sektörden müşteriye hizmet vermenin gururunu yaşıyoruz.
+              <strong>2024-2025 döneminde</strong> CFE, İFF, InterDye gibi önemli fuarlarda 
+              15+ başarılı proje gerçekleştirdik. Mekansal tasarım, mimari dekorasyon ve 
+              proje yönetimi konularındaki uzmanlığımızla sektörde fark yaratıyoruz.
             </p>
           </div>
         </div>

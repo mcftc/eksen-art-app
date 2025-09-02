@@ -4,6 +4,9 @@ import { siteConfig } from "@/lib/site-config"
 import { getStandTypes } from "@/lib/data/stand-types"
 import { Phone, Mail, MapPin, Clock } from "lucide-react"
 
+export const dynamic = 'force-dynamic'
+export const revalidate = 0
+
 export const metadata: Metadata = {
   title: `Ücretsiz Teklif Al | ${siteConfig.name}`,
   description: "Fuar standınız için ücretsiz teklif alın. Ahşap, Maxima, Modüler ve Paket stand seçenekleri için detaylı fiyat teklifi ve danışmanlık hizmeti.",

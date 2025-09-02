@@ -4,6 +4,9 @@ import { CTASection } from "@/components/cta-section"
 import { siteConfig } from "@/lib/site-config"
 import { getStandTypes } from "@/lib/data/stand-types"
 
+export const dynamic = 'force-dynamic'
+export const revalidate = 0
+
 export const metadata: Metadata = {
   title: `Fuar Standı Tipleri | ${siteConfig.name}`,
   description: "Ahşap, Maxima, Modüler ve Paket fuar standı çözümlerimizi keşfedin. Her bütçe ve ihtiyaca uygun profesyonel stand tasarımları.",
