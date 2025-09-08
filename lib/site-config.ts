@@ -1,49 +1,78 @@
 ﻿export const siteConfig = {
     name: 'Eksenart Mimarlık',
-    title: 'Eksenart Mimarlık | Mekansal Tasarım, Mimari Dekorasyon & Fuar Standı | Türkiye, Almanya & Global',
+    title: 'Eksenart | Premium Fuar Standı Tasarım ve Üretim | CNR, Tüyap, İFM | İstanbul',
     description:
-        'Eksenart Mimarlık – Mekansal tasarım, mimari dekorasyon, fuar standı proje uygulaması ve proje yönetimi konularında uzman. Türkiye ve Almanya atölyelerimizle global hizmetler. 10+ yıl deneyim.',
+        'Eksenart Mimarlık - 15+ yıllık deneyimle premium fuar standı tasarımı ve üretimi. Ahşap, Maxima, Modüler stand çözümleri. 500+ başarılı proje. Ücretsiz 3D tasarım, hızlı teslim. İstanbul merkezli, Türkiye ve Avrupa\'da hizmet.',
     keywords: [
-        // Core service keywords
-        'mekansal tasarım',
-        'mimari dekorasyon',
-        'proje yönetimi',
-        'fuar standı tasarımı',
-        'fuar standı imalatı',
-        'fuar standı kurulumu',
-        'tanıtım faaliyetleri',
-        'proje organizasyonu',
-        // Stand types
+        // High-value primary keywords
+        'fuar standı',
+        'fuar stand tasarımı',
+        'fuar stand imalatı',
+        'exhibition stand design',
+        'stand kurulumu',
+        
+        // Stand types with commercial intent
         'ahşap fuar standı',
+        'ahşap stand fiyatları',
         'maxima fuar standı',
+        'maxima stand sistemleri',
         'modüler fuar standı',
+        'modüler stand kiralama',
         'paket fuar standı',
-        // Value propositions
-        'premium fuar standı',
-        'kaliteli fuar standı',
-        'sürdürülebilir fuar standı',
-        'VIP fuar standı',
-        // Ancillary services
-        'fuar hostesi',
-        'catering fuar hizmeti',
-        // Geo modifiers
+        'hazır stand çözümleri',
+        
+        // Location-based keywords
         'İstanbul fuar standı',
-        'Türkiye fuar standı',
-        'Almanya fuar standı',
-        'Avrupa fuar standı',
-        'Rusya fuar standı',
-        'Orta Doğu fuar standı',
-        'ABD fuar standı',
-        // Brand
-        'Eksenart Mimarlık'
+        'CNR fuar standı',
+        'Tüyap fuar standı',
+        'İFM fuar standı',
+        'Ankara fuar standı',
+        'İzmir fuar standı',
+        
+        // Service keywords
+        '3D stand tasarım',
+        'stand proje',
+        'stand üretimi',
+        'stand montajı',
+        'stand depolama',
+        'dijital baskı hizmetleri',
+        
+        // Industry-specific
+        'teknoloji fuarı standı',
+        'gıda fuarı standı',
+        'mobilya fuarı standı',
+        'yapı fuarı standı',
+        'sağlık fuarı standı',
+        
+        // Commercial intent
+        'fuar standı fiyatları',
+        'stand maliyeti',
+        'fuar standı teklif',
+        'ucuz fuar standı',
+        'kaliteli fuar standı',
+        
+        // Brand terms
+        'Eksenart',
+        'Eksenart Mimarlık',
+        'eksenart fuar standı'
     ],
     url: 'https://eksenart.com',
-    ogImage: '/og-image.jpg', // Recommended: 1200x630px, optimized JPG/WEBP
+    ogImage: '/og-image.jpg',
+    alternateUrls: {
+        tr: 'https://eksenart.com/tr',
+        en: 'https://eksenart.com/en'
+    },
     contact: {
         phone: '+90 530 120 41 82',
+        whatsapp: '905301204182',
         email: 'info@eksenart.com',
-        address: 'İstanbul, Türkiye',
-        workingHours: 'Pazartesi - Cumartesi: 09:00 - 19:00'
+        address: 'Kısıklı Cad. No:23, Üsküdar, İstanbul, Türkiye',
+        addressShort: 'İstanbul, Türkiye',
+        workingHours: 'Pazartesi - Cumartesi: 09:00 - 19:00',
+        coordinates: {
+            lat: 41.0082,
+            lng: 28.9784
+        }
     },
     social: {
         instagram: 'https://instagram.com/eksenartmimarlik',

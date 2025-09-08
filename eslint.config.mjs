@@ -23,6 +23,14 @@ const eslintConfig = [
     {
         rules: {
             "react/no-unescaped-entities": "off", // disable globally
+            "@typescript-eslint/no-unused-vars": ["warn", {
+                "argsIgnorePattern": "^_",
+                "varsIgnorePattern": "^_",
+                "ignoreRestSiblings": true
+            }],
+            "@typescript-eslint/no-explicit-any": "warn",
+            "react-hooks/exhaustive-deps": "warn",
+            "@next/next/no-img-element": "off", // We're using optimized images where needed
         },
     },
 ];

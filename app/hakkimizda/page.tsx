@@ -46,26 +46,6 @@ export default function AboutPage() {
     }
   ]
 
-  const team = [
-    {
-      name: "Mimar Ahmet Yılmaz",
-      role: "Kurucu & Genel Müdür",
-      experience: "20+ yıl mimarlık deneyimi",
-      description: "Fuar standı tasarımı konusunda uzman. İstanbul Teknik Üniversitesi Mimarlık mezunu."
-    },
-    {
-      name: "Elif Kaya",
-      role: "Tasarım Direktörü", 
-      experience: "12+ yıl tasarım deneyimi",
-      description: "3D modelleme ve görselleştirme uzmanı. Mimar Sinan Güzel Sanatlar Üniversitesi mezunu."
-    },
-    {
-      name: "Mühendis Can Demir",
-      role: "Üretim Müdürü",
-      experience: "15+ yıl üretim deneyimi",
-      description: "Endüstri mühendisi. Stand üretim süreçleri ve kalite kontrol uzmanı."
-    }
-  ]
 
   return (
     <div className="py-8">
@@ -138,24 +118,6 @@ export default function AboutPage() {
                 <p className="text-muted-foreground text-sm">
                   {value.description}
                 </p>
-              </div>
-            ))}
-          </div>
-        </div>
-
-        {/* Team */}
-        <div className="mb-16">
-          <h2 className="text-3xl font-bold text-center mb-12">Ekibimiz</h2>
-          <div className="grid md:grid-cols-3 gap-8">
-            {team.map((member) => (
-              <div key={member.name} className="bg-muted/30 rounded-lg p-6 text-center">
-                <div className="w-20 h-20 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Users className="h-10 w-10 text-primary" />
-                </div>
-                <h3 className="font-semibold text-lg mb-1">{member.name}</h3>
-                <p className="text-primary font-medium mb-2">{member.role}</p>
-                <p className="text-sm text-muted-foreground mb-3">{member.experience}</p>
-                <p className="text-sm text-muted-foreground">{member.description}</p>
               </div>
             ))}
           </div>
